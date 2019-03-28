@@ -1,6 +1,6 @@
 
 export const fetchUsersApi = async (dispatch, actionType) => {
-  let apiUrl = "http://demo9197058.mockable.io/users";
+  let apiUrl = "https://demo9197058.mockable.io/users";
   fetch(apiUrl, {
       method: "GET"
    })
