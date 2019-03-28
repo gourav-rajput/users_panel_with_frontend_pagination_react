@@ -14,6 +14,10 @@ const Table = ({ usersList, query, viewUser, entitiesPerPage }) => {
       });
       setListToRender([...newList]);
     }
+
+    if (listToRender !== usersList && query === "") {
+      setListToRender([...usersList]);
+    }
   }, [query, usersList]);
 
   // Acccepts string value to sort the userList
